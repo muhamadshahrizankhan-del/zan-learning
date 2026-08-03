@@ -2,51 +2,71 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>IAB Digital Learning Hub</title>
-<link rel="stylesheet" href="style.css">
+<style>
+body{margin:0;font-family:Segoe UI,Arial;background:#f5f7fb}
+header{background:#0b5ed7;color:#fff;padding:30px;text-align:center}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:20px;padding:30px}
+.card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 2px 10px rgba(0,0,0,.1)}
+.card h2{margin-top:0}
+.btn{display:inline-block;margin-top:10px;padding:10px 16px;background:#0b5ed7;color:#fff;text-decoration:none;border-radius:8px}
+footer{text-align:center;color:#666;padding:20px}
+</style>
 </head>
 <body>
 <header>
 <h1>🎓 IAB Digital Learning Hub</h1>
-<p>Microsoft 365 • Google Workspace • AI</p>
-<input id="search" type="text" placeholder="Search module...">
+<p>Pilih kategori dan buka folder untuk memuat turun bahan latihan.</p>
 </header>
 
-<main id="modules">
+<div class="grid">
 
 <div class="card">
 <h2>📘 Microsoft Word</h2>
-<a href="files/word/Modul_Microsoft_Word.pdf">⬇ Download Modul</a>
-<a href="files/word/Latihan_Word.docx">⬇ Download Latihan</a>
+<p>Modul, latihan dan template.</p>
+<a class="btn" href="files/M365 Word/">📂 Open Folder</a>
 </div>
 
 <div class="card">
-<h2>📊 Microsoft Excel</h2>
-<a href="files/excel/Modul_Excel.pdf">⬇ Download Modul</a>
-<a href="files/excel/Latihan_Excel.xlsx">⬇ Download Latihan</a>
+<h2>📗 Microsoft Excel</h2>
+<p>Dataset, modul dan latihan.</p>
+<a class="btn" href="files/M365 Excel/">📂 Open Folder</a>
 </div>
 
 <div class="card">
-<h2>📽 Microsoft PowerPoint</h2>
-<a href="files/powerpoint/Modul_PowerPoint.pdf">⬇ Download Modul</a>
-<a href="files/powerpoint/Template_PowerPoint.pptx">⬇ Download Template</a>
+<h2>📙 Microsoft PowerPoint</h2>
+<p>Slide, template dan contoh.</p>
+<a class="btn" href="files/M365 Slide/">📂 Open Folder</a>
 </div>
 
 <div class="card">
-<h2>☁ Google Workspace</h2>
-<a href="files/google/Google_Docs.pdf">⬇ Google Docs</a>
-<a href="files/google/Google_Sheets.pdf">⬇ Google Sheets</a>
-<a href="files/google/Google_Slides.pdf">⬇ Google Slides</a>
+<h2>📄 Google Docs</h2>
+<a class="btn" href="files/Google Docs/">📂 Open Folder</a>
+</div>
+
+<div class="card">
+<h2>📊 Google Sheets</h2>
+<a class="btn" href="files/Google Sheets/">📂 Open Folder</a>
+</div>
+
+<div class="card">
+<h2>📽 Google Slides</h2>
+<a class="btn" href="files/Google Slides/">📂 Open Folder</a>
 </div>
 
 <div class="card">
 <h2>🤖 Artificial Intelligence</h2>
-<a href="files/ai/Prompt_Guide.pdf">⬇ Prompt Guide</a>
+<a class="btn" href="files/Artificial Intelligence/">📂 Open Folder</a>
 </div>
 
-</main>
+<div class="card">
+<h2>🎓 Kursus Khas</h2>
+<a class="btn" href="files/Kursus/">📂 Open Folder</a>
+</div>
 
-<script src="script.js"></script>
+</div>
+
+<footer>© Institut Aminuddin Baki</footer>
 </body>
 </html>
